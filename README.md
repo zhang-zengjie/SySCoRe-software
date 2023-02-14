@@ -26,19 +26,28 @@ This toolbox is created by: *Birgit van Huijgevoort*, *Oliver Schön*, *Sadegh S
 
 Install MATLAB toolboxes *Statistics and Machine Learning Toolbox* and *Deep Learning Toolbox*. This can be done by running the installation package of MATLAB and select the corresponding terms in the installation options.
 
-#### Library Working with Polyhedrons
+#### The library for polyhedrons
 
-Install the `mpt` toolbox that works with Polyhedrons follow the [instruction](https://www.mpt3.org/Main/Installation).
+Install the `mpt` toolbox that works with Polyhedrons follow this [instruction](https://www.mpt3.org/Main/Installation). Let us use `TBX_MANAGER` to denote the root directory of the installation.
 
+#### YALMIP and its solvers
 
+Install `YALMIP` following this [instruction](https://yalmip.github.io/tutorial/installation/). YALMIP is completely written in `m`-code. Thus, the installation of YALMIP is pretty simple and is irrelevant to the Operating Systems (OS). YALMIP itself does not contain low-level solvers. The following solvers need to be installed.
 
+- Install the `SeDuMi` solver following this [instruction](https://github.com/SQLP/SeDuMi).
 
-- Ensure that you also install SeDuMi and/or MOSEK solvers for YALMIP.
-- Install the Tensor toolbox. Follow: https://www.tensortoolbox.org
-- Add all folder and sub folders to your path
+- Install the `MOSEK` solver following this [instruction](https://docs.mosek.com/10.0/toolbox/install-interface.html). Note that `MOSEK` has different versions among `Windows`, `Linux`, and `Mac OS`. Ensure that you are downloading the correct version. It is also important to obtain the `license` following the intruction.
+
+#### The Tensor toolbox
+
+Install the `Tensor toolbox` follow this [instruction](https://www.tensortoolbox.org).
+
 
 
 ### 2. Run Tutorials
+
+
+- Add all folder and sub folders to your path
 
 - Run any tutorials from the root SySCoRe folder
 
