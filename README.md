@@ -16,6 +16,10 @@ See the `LICENSE` file for the license terms of this toolbox.
 
 See the folder `SySCoRe-software/doc` for full documentation and a `GettingStarted` file. 
 
+#### Supported Operating Systems
+
+This toolbox can be running on Windows, Ubuntu, and Mac OS.
+
 #### Authorship
 
 This toolbox is created by: *Birgit van Huijgevoort*, *Oliver Schön*, *Sadegh Soudjani* and *Sofie Haesaert*.
