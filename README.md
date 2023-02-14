@@ -102,7 +102,7 @@ Use the following classes to build a model:
 #### Translate a specification to a DFA
 Use the following function to translate an LTL formula to a DFA:
 - `SYSCORE_ROOT/Specification/TranslateSpec.m`
-This function calls a series functions following the route `TranslateSpec`->`spec2buchi` &rarr `create_buchi`, and the last one runs the executable `SYSCORE_ROOT/Specification/LTL2BA/ltl2ba/ltl2ba_X` which generates a Büchi Automaton, where `X` can be either `win`, `linux`, or `mac`, respectively representing the executables that should be run on ***Windows***, ***Ubuntu***, or ***Mac OS***.
+This function calls a series functions following the route `TranslateSpec` -> `spec2buchi` -> `create_buchi`, and the last one runs the executable `SYSCORE_ROOT/Specification/LTL2BA/ltl2ba/ltl2ba_X` which generates a Büchi Automaton, where `X` can be either `win`, `linux`, or `mac`, respectively representing the executables that should be run on ***Windows***, ***Ubuntu***, or ***Mac OS***. The source code of these executables is written in ***C*** and can be obtained in [http://www.lsv.fr/~gastin/ltl2ba/download.php].
 
 
 #### Compute abstraction
