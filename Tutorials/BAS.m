@@ -10,7 +10,7 @@
 
 clc; clear; close all;
 cd([fileparts(which(mfilename)), '/..']);
-run config.m
+config
 
 tStart = tic;
 disp('Start building automation system benchmark')
