@@ -77,7 +77,7 @@ This configuration only needs to be conducted once. Whenever you run a code usin
 
 ### 3. Running Tutorials
 
-You can run all six tutorial scripts under the 'SYSCORE_ROOT/Tutorials/' directory.
+You can run all six tutorial scripts under the `SYSCORE_ROOT/Tutorials/` directory.
 - `SYSCORE_ROOT/Tutorials/CarPark1D.m`
 - `SYSCORE_ROOT/Tutorials/CarPark2D_RunningExample.m`
 - `SYSCORE_ROOT/Tutorials/CarPark2D_interfaceOption.m`
