@@ -1,9 +1,12 @@
 # SySCoRe
-SySCoRe stands for Synthesis via Stochastic Coupling Relations for stochastic continuous state systems. It is a toolbox that synthesizes controllers for stochastic continuous-state systems to satisfy temporal logic specifications. Starting from a system description and a co-safe temporal logic specification, SySCoRe provides all necessary functions for synthesizing a robust controller and quantifying the associated formal robustness guarantees. It distinguishes itself from other available tools by supporting nonlinear dynamics, complex co-safe temporal logic specifications over infinite horizons and model-order reduction.
 
-To achieve this, SySCoRe first generates a finite-state abstraction of the provided model and performs probabilistic model checking. Then, it establishes a probabilistic coupling to the original stochastic system encoded in an approximate simulation relation, based on which a lower bound on the satisfaction probability is computed. SySCoRe provides non-trivial lower bounds for infinite-horizon properties and unbounded disturbances since its computed error does not grow linear in the horizon of the specification. It exploits a tensor representation to facilitate the efficient computation of transition probabilities. We showcase these features on several tutorials.
+## Quick Start Tutorial
 
-See the LICENSE file for the license terms of this toolbox.
+**SySCoRe** stands for *Synthesis via Stochastic Coupling Relations for stochastic continuous state systems*. It is a toolbox that synthesizes controllers for stochastic continuous-state systems to satisfy linear temporal logic (LTL) specifications. Starting from a system description and a co-safe linear temporal logic specification (scLTL), **SySCoRe** provides all necessary functions for synthesizing a robust controller and quantifying the associated formal robustness guarantees. It distinguishes itself from other available tools by supporting nonlinear dynamics, complex co-safe temporal logic specifications over infinite horizons and model-order reduction.
+
+To achieve this, **SySCoRe** first generates a finite-state abstraction of the provided model and performs probabilistic model checking. Then, it establishes a probabilistic coupling to the original stochastic system encoded in an approximate simulation relation, based on which a lower bound on the satisfaction probability is computed. **SySCoRe** provides non-trivial lower bounds for infinite-horizon properties and unbounded disturbances since its computed error does not grow linear in the horizon of the specification. It exploits a tensor representation to facilitate the efficient computation of transition probabilities. We showcase these features on several tutorials.
+
+See the `LICENSE` file for the license terms of this toolbox.
 
 See the folder doc for full documentation and a GettingStarted file. 
 
