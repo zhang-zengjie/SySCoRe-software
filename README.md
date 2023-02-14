@@ -82,7 +82,7 @@ addpath(genpath(fileparts(which(mfilename))));
 ```
 This configuration only needs to be conducted once. Whenever you run a code using this toolbox, run this `config.m` file first.
 
-### 3. Running Tutorials
+### 4. Running Tutorials
 
 You can run all six tutorial scripts under the `SYSCORE_ROOT/Tutorials/` directory.
 - `$SYSCORE_ROOT/Tutorials/CarPark1D.m`
@@ -101,7 +101,7 @@ run config.m                                % Run the configuration file.
 It is important that the running should be conducted under the root directory `SYSCORE_ROOT` since many functions in this toolbox use **relative paths**. Your code can also start with these statements, but do change the relative path `/..` in the statement according to the specific position of your `m`-script.
 
 
-### 4. Classes and Functions
+### 5. Classes and Functions
 
 Use the following classes and functions to solve your problems.
 
