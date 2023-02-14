@@ -8,9 +8,9 @@
 % sysLTI -> original model
 % sysLTIr -> reduced order model
 
-clear;close all;
-
-run Install.m
+clc; clear; close all;
+cd([fileparts(which(mfilename)), '/..']);
+run config.m
 
 tStart = tic;
 disp('Start building automation system benchmark')
