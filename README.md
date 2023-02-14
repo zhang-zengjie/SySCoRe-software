@@ -1,8 +1,8 @@
-# SySCoRe
+# SySCoRe: Toolbox for the Synthesis of Linear Temporal Logic
 
 ## Quick Start Tutorial
 
-#### Introduction
+### Introduction
 
 **SySCoRe** stands for *Synthesis via Stochastic Coupling Relations for stochastic continuous state systems*. It is a toolbox that synthesizes controllers for stochastic continuous-state systems to satisfy ***linear temporal logic (LTL)*** specifications. Starting from a system description and a ***co-safe linear temporal logic specification (scLTL)***, **SySCoRe** provides all necessary functions for synthesizing a robust controller and quantifying the associated formal robustness guarantees. It distinguishes itself from other available tools by supporting nonlinear dynamics, complex co-safe temporal logic specifications over infinite horizons and model-order reduction.
 
@@ -20,7 +20,7 @@ See the folder `SySCoRe-software/doc` for full documentation and a `GettingStart
 
 This toolbox is created by: *Birgit van Huijgevoort*, *Oliver Schön*, *Sadegh Soudjani* and *Sofie Haesaert*.
 
-## 1. Installation
+### 1. Installation
 - Install MATLAB toolboxes Statistics and Machine Learning Toolbox and Deep Learning Toolbox
 - Install the mpt toolbox to be able to work with the Polyhedrons. Follow: https://www.mpt3.org/Main/Installation
 - Ensure that you also install SeDuMi and/or MOSEK solvers for YALMIP.
