@@ -47,7 +47,7 @@ The `mosek` solver is also needed, which can be installed following [***this ins
 
 Download the `tensor toolbox` follow [this instruction](https://www.tensortoolbox.org). Note down its root directory as `TENSOR_DIR`.
 
-### 3. One-time configuration
+### 3. One-Time Configuration
 
 Before you run any codes in this toolbox, you need to add the paths of the `tbxmanager`, the `mosek` solver, and the `tensor_toolbox` to MATLAB. We recommend to simplify this process via one-time configuration. Supposing that the root directory of this toolbox is `SYSCORE_ROOT=SySCoRe-software`, open `SYSCORE_ROOT/config.m`, and fill the paths of the above toolboxes to the corresponding `addpath` statements.
 ```
@@ -91,43 +91,42 @@ clc; clear; close all;                      % Clean the environment;
 cd([fileparts(which(mfilename)), '/..']);   % Navigate back to the root directory of the toolbox;
 run config.m                                % Run the configuration file.
 ```
-It is important that the running should be conducted under the root directory `SySCoRe-software` since many functions in this toolbox use **relative paths**. Your code can also start with these statements, but do change the relative path `/..` in the statement according to the specific position of your `m`-script.
+It is important that the running should be conducted under the root directory `SYSCORE_ROOT` since many functions in this toolbox use **relative paths**. Your code can also start with these statements, but do change the relative path `/..` in the statement according to the specific position of your `m`-script.
 
 
-### 4. Classes and functions
+### 4. Classes and Functions
 
 Use the following classes and functions to solve your problems.
 
-#### Building a model
-Using the following classes to build a model:
-- `Models/LinModel.m`
-- NonlinModel
+#### Build dynamic system models
+Use the following classes to build a model:
+- `SYSCORE_ROOT/Models/LinModel.m`: for linear models;
+- `SYSCORE_ROOT/Models/NonlinModel.m`: for nonlinear models.
 
-#### Build a specification & translate it to a DFA
-- TranslateSpec
+#### Translate a specification to a DFA
+Use the following function to translate an LTL formula to a DFA:
+- `SYSCORE_ROOT/Specification/TranslateSpec.m`
 
-#### Computing abstraction
-Compute a finite state abstraction using
-- FSabstraction
+#### Compute abstraction
+Use the following functions to compute abstract models:
+- `SYSCORE_ROOT/Abstractions/FSabstraction.m`: for finite state abstraction;
+- `SYSCORE_ROOT/Abstractions/ModelReduction.m` for a reduced-order model;
+- `SYSCORE_ROOT/Abstractions/PWAapproximation.m` for a piecewise-affine approximation.
 
-Compute a reduced-order model using
-- ModelReduction
+#### Relation quantification
+Use the following function to quantify the simulation relation between the abstract and original model
+- `SYSCORE_ROOT/Similarity/QuantifySim.m` 
 
-Compute a piecewise-affine approximation using
-- PWAapproximation
+### Synthesis
+Use the following classes and functions to synthesize a robust controller
+- `SYSCORE_ROOT/Controllers/RefineController.m`: the class for a refined controller;
+- `SYSCORE_ROOT/Controllers/SynthesizeRobustController.m`: synthesize a robust controller;
+- `SYSCORE_ROOT/Controllers/ImplementController.m`: simulate the closed loop system with the synthesized controller.
 
-### Quantify the simulation model between the abstract and original model
-- QuantifySim
 
-### Synthesize a robust controller
-- RefineController
-
-### Simulate the resulting closed loop system
-- ImplementController
-
-## References
-- van Huijgevoort, B. C., & Haesaert, S. (2020). Similarity quantification for linear stochastic systems: A coupling compensator approach. Automatica, 144, 110476.
-- Haesaert, S., Soudjani, S. , & Abate, A. (2017). Verification of general Markov decision processes by approximate similarity relations and policy refinement. SIAM Journal on Control and Optimization, 55(4), 2333-2367.
-- Haesaert, S., & Soudjani, S. (2020). Robust dynamic programming for temporal logic control of stochastic systems. IEEE Transactions on Automatic Control, 66(6), 2496-2511.
-- van Huijgevoort, B.C. & Haesaert, S. (2022). Temporal logic control of nonlinear stochastic systems using a piecewise-affine abstraction. https://www.sofiehaesaert.com/assets/Research/PWA_abstractions.pdf
+### References
+- **van Huijgevoort, B. C.** and **Haesaert, S.** (2020). Similarity quantification for linear stochastic systems: A coupling compensator approach. *Automatica*, 144, 110476.
+- **Haesaert, S.**, **Soudjani, S. **, and **Abate, A.** (2017). Verification of general Markov decision processes by approximate similarity relations and policy refinement. SIAM Journal on Control and Optimization, 55(4), 2333-2367.
+- **Haesaert, S.** and **Soudjani, S.** (2020). Robust dynamic programming for temporal logic control of stochastic systems. *IEEE Transactions on Automatic Control*, 66(6), 2496-2511.
+- **van Huijgevoort, B.C.** and **Haesaert, S.** (2022). Temporal logic control of nonlinear stochastic systems using a piecewise-affine abstraction. [[*Link*](https://www.sofiehaesaert.com/assets/Research/PWA_abstractions.pdf)]
 
