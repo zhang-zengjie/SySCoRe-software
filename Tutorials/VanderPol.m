@@ -8,11 +8,9 @@
 % Be aware: expected runtime = approx 60 minutes (depending on the number
 % of cores in your computer)
 
-clear all
-clc
-close all
-
-run Install.m
+clc; clear; close all;
+cd([fileparts(which(mfilename)), '/..']);
+config
 
 tStart = tic;
 disp('Start Van der Pol Oscillator benchmark')
