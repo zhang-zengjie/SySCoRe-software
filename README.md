@@ -24,7 +24,7 @@ This toolbox is created by: *Birgit van Huijgevoort*, *Oliver Schön*, *Sadegh S
 
 #### MATLAB toolboxes
 
-Install MATLAB toolboxes ***Statistics and Machine Learning Toolbox*** and ***Deep Learning Toolbox***. This can be done by running the installation package of MATLAB and select the corresponding terms in the installation options. You can also install them in the MATLAB Window.
+Install MATLAB toolboxes ***Control System Toolbox***, ***Statistics and Machine Learning Toolbox*** and ***Deep Learning Toolbox***. This can be done by running the installation package of MATLAB and select the corresponding terms in the installation options. You can also install them in the MATLAB Window.
 
 #### tbxmanager
 
@@ -59,15 +59,12 @@ try % Add the path to the tensor_toolbox
 catch
     warning('Could not find tensor toolbox. Synthesis may fail.');
 end
-
 ```
 Meanwhile, the configuration file also add the paths of all subfolders of this toolbox via
 ```
 addpath(genpath(fileparts(which(mfilename))));
 ```
-
-
-Then, 
+You can 
 
 
 - Add all folder and sub folders to your path
