@@ -79,18 +79,21 @@ You can run all six tutorials under the 'SysCoRe-software/Tutorials/' directory.
 - `PackageDelivery`
 - `BAS`
 - `VanderPol`
+
 Note that all tutorial codes start with the following statements:
 ```
 clc; clear; close all;                      % Clean the environment;
-cd([fileparts(which(mfilename)), '/..']);   % Navigate to the root directory of the toolbox;
+cd([fileparts(which(mfilename)), '/..']);   % Navigate back to the root directory of the toolbox;
 run config.m                                % Run the configuration file.
 ```
-It is important that the running should be conducted under the root directory `SySCoRe-software` since many functions in this toolbox use **relative paths**. Your code can also start with these statements, but do change the relative path `/..` in the statement according to the position of your script.
+It is important that the running should be conducted under the root directory `SySCoRe-software` since many functions in this toolbox use **relative paths**. Your code can also start with these statements, but do change the relative path `/..` in the statement according to the specific position of your `m`-script.
 
 
-## 3. Usage
+### 4. Classes and functions
 
-### Build a model
+Use the following classes and functions to solve your problems.
+
+#### Building a model
 Build a model as an object of the classes described in the folder Models:
 - LinModel
 - NonlinModel
