@@ -6,9 +6,9 @@
 %
 % Expected runtime = approx 10 seconds
 
-clc
-clear
-close all
+clc; clear; close all;
+cd([fileparts(which(mfilename)), '/..']);
+config
 
 tStart = tic;
 disp('Start car park 2D (running example) benchmark')
