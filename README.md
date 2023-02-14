@@ -30,11 +30,11 @@ Install MATLAB toolboxes ***Statistics and Machine Learning Toolbox*** and ***De
 
 Configure the `tbxmanager` following [this instruction](https://www.mpt3.org/Main/Installation) which installs a cluster MATLAB toolboxes for you, including `YALMIP`, the `sedumi` solver, `mpt` that works with polyhedrons, which are necessary dependencies for this toolbox. Let us use `TBX_MANAGER_DIR` to denote the root directory of the installation. The associated MATLAB toolboxes are placed under `TBX_MANAGER_DIR/toolboxes/`. You may also replace them with your own installations, although it is not necessary.
 
-#### The mosek solver for YALMIP
+#### the mosek solver for YALMIP
 
 The `mosek` solver is also needed, which can be installed following [***this instruction***](https://docs.mosek.com/10.0/install/installation.html). Note that `mosek` has different versions among `Conda`, `Windows`, `Linux`, and `Mac OS`. **Be careful that you are downloading the correct version**. It is also important to obtain the personal license file `mosek.lic` following [this intruction](https://docs.mosek.com/10.0/licensing/index.html) and place it in the directory regulated by the installation instruction. This license is only for a specific user of the OS. Note down the root directory of `mosek` as `MOSEK_DIR`.
 
-#### The Tensor toolbox
+#### tensor toolbox
 
 Install the `Tensor toolbox` follow this [instruction](https://www.tensortoolbox.org). Note down the installation directory as `TENSOR_DIR`.
 
