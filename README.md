@@ -38,7 +38,7 @@ The `mosek` solver is also needed, which can be installed following [***this ins
 
 Download the `tensor toolbox` follow [this instruction](https://www.tensortoolbox.org). Note down its root directory as `TENSOR_DIR`.
 
-### 3. Running Tutorials
+### 3. One-time configuration
 
 Before you run any codes in this toolbox, you need to add the paths of the `tbxmanager`, the `mosek` solver, and the `tensor_toolbox` to MATLAB. Supposing that the root directory of this toolbox is `SySCoRe-software`, we recommend to open the configuration file `SySCoRe-software/config.m`, and fill the paths to the corresponding `addpath` statements.
 ```
@@ -64,6 +64,10 @@ Meanwhile, the configuration file also add the paths of all subfolders of this t
 ```
 addpath(genpath(fileparts(which(mfilename))));
 ```
+
+### 3. Running Tutorials
+
+
 You can 
 
 
