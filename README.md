@@ -37,7 +37,13 @@ Install the ***tbxmanager*** following [***this instruction***](https://www.mpt3
 
 #### the mosek solver for YALMIP
 
-The ***mosek*** solver is also needed, which can be installed following [***this instruction***](https://docs.mosek.com/10.0/install/installation.html). Note that ***mosek*** has different versions among ***Conda***, ***Windows***, ***Linux***, and ***Mac OS***. **Be careful that you are downloading the correct version**. It is also important to obtain the personal license file `mosek.lic` following [***this intruction***](https://docs.mosek.com/10.0/licensing/index.html) and place it in the directory regulated by the installation instruction. This license is only for a specific user of the OS. Note down the root directory of ***mosek*** as `MOSEK_DIR`. We are only using the MATLAB toolbox of ***mosek***, so the concerned path is `MOSEK_MATLAB_DIR=MOSEK_DIR/mosek/X.X/toolbox/r20xxa`. The specific path name may be different according to the versions.
+The ***mosek*** solver is also needed, which can be installed following [***this instruction***](https://docs.mosek.com/10.0/install/installation.html). Note that ***mosek*** has different versions among ***Conda***, ***Windows***, ***Linux***, and ***Mac OS***. **Be careful that you are downloading the correct version**. 
+
+- **IMPORTANT information about license!!!**: to use ***mosek***, you need to obtain a personal license file `mosek.lic` following [***this intruction***](https://docs.mosek.com/10.0/licensing/index.html) and place it in the directory regulated by the installation instruction. This license is only for a specific user. But it can be used on different operating systems. 
+
+- **IMPORTANT for Windows user!!!**: it is recommended to use the *Manual Installers (Alternative)* option to download the archive of ***mosek*** and extract it to your preferred directory, instead of the *Default Installers (Preferred)* option. The reason is that the latter will ask you to install from a `.msi` file which defaultly install ***mosek*** in your `C:/Program Files` directory. Note that MATLAB does not accept spaces in a path...
+
+Suppose that the path of the root directory of your ***mosek*** is `MOSEK_DIR`. What we are concerned with is the path of the MATLAB toolbox of ***mosek***, i.e., `MOSEK_MATLAB_DIR=MOSEK_DIR/mosek/X.X/toolbox/r20xxa`. The specific path name may be different according to the versions.
 
 #### tensor toolbox
 
