@@ -44,50 +44,49 @@ Download the `tensor toolbox` follow [this instruction](https://www.tensortoolbo
 
 ### 3. One-time configuration
 
-Before you run any codes in this toolbox, you need to add the paths of the `tbxmanager`, the `mosek` solver, and the `tensor_toolbox` to MATLAB. Supposing that the root directory of this toolbox is `SySCoRe-software`, we recommend to open the configuration file `SySCoRe-software/config.m`, and fill the paths to the corresponding `addpath` statements.
+Before you run any codes in this toolbox, you need to add the paths of the `tbxmanager`, the `mosek` solver, and the `tensor_toolbox` to MATLAB. We recommend to simplify this process via one-time configuration. Supposing that the root directory of this toolbox is `SySCoRe-software`, open `SySCoRe-software/config.m`, and fill the paths of the above toolboxes to the corresponding `addpath` statements.
 ```
 try % Add the path to the tbxmanager
-    addpath TBX_MANAGER_DIR
+    addpath(genpath('~/Documents/test/tbxmanager/'));
 catch
     warning('Could not find mpt3 toolbox. Synthesis may fail.');
 end
 
-try % Add the path to the mosek solver
-    addpath MOSEK_MATLAB_DIR
-catch
-    warning('Could not find mosek solver. Synthesis may fail.');
-end
-
 try % Add the path to the tensor_toolbox
-    addpath TENSOR_TOOLBOX
+    addpath(genpath('~/Documents/test/tensor_toolbox/'));
 catch
     warning('Could not find tensor toolbox. Synthesis may fail.');
+end
+
+try % Add the path to the mosek solver
+    addpath(genpath('~/Documents/test/mosek/mosek/10.0/toolbox/r2017a'));
+catch
+    warning('Could not find mosek solver. Synthesis may fail.');
 end
 ```
 Meanwhile, the configuration file also add the paths of all subfolders of this toolbox via
 ```
 addpath(genpath(fileparts(which(mfilename))));
 ```
+This configuration only needs to be conducted once. Whenever you run a code using this toolbox, run this `config.m` file first.
 
 ### 3. Running Tutorials
 
+You can run all six tutorials under the 'SysCoRe-software/Tutorials/' directory.
+- `CarPark1D`
+- `CarPark2D_RunningExample`
+- `CarPark2D_interfaceOption`
+- `PackageDelivery`
+- `BAS`
+- `VanderPol`
+Note that all tutorial codes start with the following statements:
+```
+clc; clear; close all;                      % Clean the environment;
+cd([fileparts(which(mfilename)), '/..']);   % Navigate to the root directory of the toolbox;
+run config.m                                % Run the configuration file.
+```
+It is important that the running should be conducted under the root directory `SySCoRe-software` since many functions in this toolbox use **relative paths**. Your code can also start with these statements, but do change the relative path `/..` in the statement according to the position of your script.
 
-You can 
-
-
-- Add all folder and sub folders to your path
-
-- Run any tutorials from the root SySCoRe folder
-
-Tested on macOS, with MATLAB R2022a including all standard MATLAB toolboxes.
-
-
-- CarPark1D
-- CarPark2D_RunningExample
-- CarPark2D_interfaceOption
-- PackageDelivery
-- BAS
-- VanderPol
 
 ## 3. Usage
 
