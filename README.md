@@ -28,7 +28,7 @@ Install MATLAB toolboxes *Statistics and Machine Learning Toolbox* and *Deep Lea
 
 #### The library for polyhedrons
 
-Install the `mpt` toolbox that works with Polyhedrons follow this [instruction](https://www.mpt3.org/Main/Installation). Let us use `TBX_MANAGER` to denote the root directory of the installation.
+Install the `mpt` toolbox that works with Polyhedrons follow this [instruction](https://www.mpt3.org/Main/Installation). Let us use `TBX_MANAGER_DIR` to denote the root directory of the installation.
 
 #### YALMIP and its solvers
 
@@ -36,13 +36,11 @@ Install `YALMIP` following this [instruction](https://yalmip.github.io/tutorial/
 
 - Install the `SeDuMi` solver following this [instruction](https://github.com/SQLP/SeDuMi).
 
-- Install the `MOSEK` solver following this [instruction](https://docs.mosek.com/10.0/toolbox/install-interface.html). Note that `MOSEK` has different versions among `Windows`, `Linux`, and `Mac OS`. Ensure that you are downloading the correct version. It is also important to obtain the `license` following the intruction.
+- Install the `MOSEK` solver following this [instruction](https://docs.mosek.com/10.0/toolbox/install-interface.html). Note that `MOSEK` has different versions among `Windows`, `Linux`, and `Mac OS`. Ensure that you are downloading the correct version. It is also important to obtain the `license` following the [intruction](https://docs.mosek.com/10.0/licensing/index.html). Note down the root directory of `MOSEK` as `MOSEK_DIR`.
 
 #### The Tensor toolbox
 
-Install the `Tensor toolbox` follow this [instruction](https://www.tensortoolbox.org).
-
-
+Install the `Tensor toolbox` follow this [instruction](https://www.tensortoolbox.org). Note down the installation directory as `TENSOR_DIR`.
 
 ### 2. Run Tutorials
 
