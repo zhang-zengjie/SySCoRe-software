@@ -37,7 +37,7 @@ Install MATLAB toolboxes ***Control System Toolbox***, ***Statistics and Machine
 
 #### tbxmanager
 
-Configure the `tbxmanager` following [***this instruction***](https://www.mpt3.org/Main/Installation) which installs a cluster MATLAB toolboxes for you, including ***YALMIP***, the ***sedumi*** solver, ***mpt*** that works with polyhedrons, which are necessary dependencies for this toolbox. Let us use `TBX_MANAGER_DIR` to denote the root directory of the installation. The associated MATLAB toolboxes are placed under `TBX_MANAGER_DIR/toolboxes/`. You may also replace them with your own installations, although it is not necessary.
+Install the ***tbxmanager*** following [***this instruction***](https://www.mpt3.org/Main/Installation) which includes a cluster MATLAB toolboxes for you, including ***YALMIP***, the ***sedumi*** solver, ***mpt*** that works with polyhedrons, which are necessary dependencies for this toolbox. Let us use `TBX_MANAGER_DIR` to denote the root directory of the installation. The associated MATLAB toolboxes are placed under `TBX_MANAGER_DIR/toolboxes/`. You may also replace them with your own installations, although it is not necessary.
 
 #### the mosek solver for YALMIP
 
