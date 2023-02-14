@@ -32,7 +32,7 @@ Configure the `tbxmanager` following [this instruction](https://www.mpt3.org/Mai
 
 #### The mosek solver for YALMIP
 
-The 'mosek' solver is also needed, which can be installed following [this instruction](https://docs.mosek.com/10.0/install/installation.html). Note that `MOSEK` has different versions among `Windows`, `Linux`, and `Mac OS`. Ensure that you are downloading the correct version. It is also important to obtain the `license` following [this intruction](https://docs.mosek.com/10.0/licensing/index.html). Note down the root directory of `MOSEK` as `MOSEK_DIR`.
+The `mosek` solver is also needed, which can be installed following [***this instruction***](https://docs.mosek.com/10.0/install/installation.html). Note that `mosek` has different versions among `Conda`, `Windows`, `Linux`, and `Mac OS`. **Be careful that you are downloading the correct version**. It is also important to obtain the `license` following [this intruction](https://docs.mosek.com/10.0/licensing/index.html) and place it in the directory regulated by the installation instruction. Note down the root directory of `mosek` as `MOSEK_DIR`.
 
 #### The Tensor toolbox
 
