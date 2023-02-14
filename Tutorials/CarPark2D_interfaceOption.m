@@ -11,9 +11,9 @@
 %
 % Expected runtime = approx 10 seconds
 
-clc
-clear
-close all
+clc; clear; close all;
+cd([fileparts(which(mfilename)), '/..']);
+config
 
 %% Specify system parameters and regions
 
