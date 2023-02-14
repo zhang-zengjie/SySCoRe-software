@@ -20,7 +20,7 @@ See the folder `SySCoRe-software/doc` for full documentation and a `GettingStart
 
 This toolbox can be running on ***Windows***, ***Ubuntu***, and ***Mac OS***. Note that all paths in this tutorial follow the ***Linux*** convention. Beware of changes if you are using ***Windows*** or ***Mac OS***.
 
-#### Authorship
+#### Contributors
 
 This toolbox is created by: **Birgit van Huijgevoort**, **Oliver Schön**, **Sadegh Soudjani** and **Sofie Haesaert**.
 
