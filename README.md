@@ -20,7 +20,7 @@ See the folder `SySCoRe-software/doc` for full documentation and a `GettingStart
 
 This toolbox is created by: *Birgit van Huijgevoort*, *Oliver Schön*, *Sadegh Soudjani* and *Sofie Haesaert*.
 
-### 1. Installation of Dependencies
+### 2. Installation of Dependencies
 
 #### MATLAB toolboxes
 
@@ -28,17 +28,46 @@ Install MATLAB toolboxes ***Statistics and Machine Learning Toolbox*** and ***De
 
 #### tbxmanager
 
-Configure the `tbxmanager` following [this instruction](https://www.mpt3.org/Main/Installation) which installs a cluster MATLAB toolboxes for you, including `YALMIP`, the `sedumi` solver, `mpt` that works with polyhedrons, which are necessary dependencies for this toolbox. Let us use `TBX_MANAGER_DIR` to denote the root directory of the installation. The associated MATLAB toolboxes are placed under `TBX_MANAGER_DIR/toolboxes/`. You may also replace them with your own installations, although it is not necessary.
+Configure the `tbxmanager` following [***this instruction***](https://www.mpt3.org/Main/Installation) which installs a cluster MATLAB toolboxes for you, including `YALMIP`, the `sedumi` solver, `mpt` that works with polyhedrons, which are necessary dependencies for this toolbox. Let us use `TBX_MANAGER_DIR` to denote the root directory of the installation. The associated MATLAB toolboxes are placed under `TBX_MANAGER_DIR/toolboxes/`. You may also replace them with your own installations, although it is not necessary.
 
 #### the mosek solver for YALMIP
 
-The `mosek` solver is also needed, which can be installed following [***this instruction***](https://docs.mosek.com/10.0/install/installation.html). Note that `mosek` has different versions among `Conda`, `Windows`, `Linux`, and `Mac OS`. **Be careful that you are downloading the correct version**. It is also important to obtain the personal license file `mosek.lic` following [this intruction](https://docs.mosek.com/10.0/licensing/index.html) and place it in the directory regulated by the installation instruction. This license is only for a specific user of the OS. Note down the root directory of `mosek` as `MOSEK_DIR`. We are only using the MATLAB toolbox of `mosek`, so the concerned path is `MOSEK_MATLAB_DIR = MOSEK_DIR/mosek/X.X/toolbox/r20xxa`. The specific path name may be different according to the versions.
+The `mosek` solver is also needed, which can be installed following [***this instruction***](https://docs.mosek.com/10.0/install/installation.html). Note that `mosek` has different versions among `Conda`, `Windows`, `Linux`, and `Mac OS`. **Be careful that you are downloading the correct version**. It is also important to obtain the personal license file `mosek.lic` following [***this intruction***](https://docs.mosek.com/10.0/licensing/index.html) and place it in the directory regulated by the installation instruction. This license is only for a specific user of the OS. Note down the root directory of `mosek` as `MOSEK_DIR`. We are only using the MATLAB toolbox of `mosek`, so the concerned path is `MOSEK_MATLAB_DIR = MOSEK_DIR/mosek/X.X/toolbox/r20xxa`. The specific path name may be different according to the versions.
 
 #### tensor toolbox
 
 Download the `tensor toolbox` follow [this instruction](https://www.tensortoolbox.org). Note down its root directory as `TENSOR_DIR`.
 
-### 2. Run Tutorials
+### 3. Running Tutorials
+
+Before you run any codes in this toolbox, you need to add the paths of the `tbxmanager`, the `mosek` solver, and the `tensor_toolbox` to MATLAB. Supposing that the root directory of this toolbox is `SySCoRe-software`, we recommend to open the configuration file `SySCoRe-software/config.m`, and fill the paths to the corresponding `addpath` statements.
+```
+try % Add the path to the tbxmanager
+    addpath TBX_MANAGER_DIR
+catch
+    warning('Could not find mpt3 toolbox. Synthesis may fail.');
+end
+
+try % Add the path to the mosek solver
+    addpath MOSEK_MATLAB_DIR
+catch
+    warning('Could not find mosek solver. Synthesis may fail.');
+end
+
+try % Add the path to the tensor_toolbox
+    addpath TENSOR_TOOLBOX
+catch
+    warning('Could not find tensor toolbox. Synthesis may fail.');
+end
+
+```
+Meanwhile, the configuration file also add the paths of all subfolders of this toolbox via
+```
+addpath(genpath(fileparts(which(mfilename))));
+```
+
+
+Then, 
 
 
 - Add all folder and sub folders to your path
