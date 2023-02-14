@@ -22,7 +22,7 @@ This toolbox can be running on Windows, Ubuntu, and Mac OS.
 
 #### Authorship
 
-This toolbox is created by: *Birgit van Huijgevoort*, *Oliver Schön*, *Sadegh Soudjani* and *Sofie Haesaert*.
+This toolbox is created by: **Birgit van Huijgevoort**, **Oliver Schön**, **Sadegh Soudjani** and **Sofie Haesaert**.
 
 #### Note on Path Convension
 
