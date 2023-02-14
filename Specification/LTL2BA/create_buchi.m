@@ -35,13 +35,22 @@ formula=regexprep(formula, 'G', '[]');
 currentFile = mfilename( 'fullpath' );
 [pathstr,~,~] = fileparts( currentFile );
 
-[s,r]=system([fullfile( './Specification/LTL2BA', '/ltl2ba/ltl2ba' ),' -f "' formula '"']); %sintax for calling ltl2ba.exe (located in subdir .\ltl2ba); use full description result (-d)
-                                                        %example of run:
-                                                        %[s,r]=dos('ltl2ba
-                                                        %-d -f "<> p1"');
-                                                        %%LTL 2 Buchi for
-                                                        %our formula
-%assert(s~=0, string(r)) % Check whether successful
+% LTL 2 Buchi for our formula
+% example of run:
+% [s,r]=dos('ltl2ba -d -f "<> p1"');
+% `-d`: use full description result
+
+if ismac
+    [s,r]=system([fullfile( './Specification/LTL2BA', '/ltl2ba/ltl2ba_mac' ),' -f "' formula '"']); 
+elseif isunix
+    [s,r]=system([fullfile( './Specification/LTL2BA', '/ltl2ba/ltl2ba_linux' ),' -f "' formula '"']); 
+elseif ispc
+    [s,r]=system([fullfile( './Specification/LTL2BA', '/ltl2ba/ltl2ba_win' ),' -f "' formula '"']); 
+else
+    disp('Platform not supported')
+end 
+
+% assert(s~=0, string(r)) % Check whether successful
 % s = error code, s=0 is a successfull one
 % r = output string that includes the Buchi Automaton  
 
