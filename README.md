@@ -24,11 +24,11 @@ This toolbox is created by: *Birgit van Huijgevoort*, *Oliver Schön*, *Sadegh S
 
 #### MATLAB toolboxes
 
-Install MATLAB toolboxes **Statistics and Machine Learning Toolbox** and **Deep Learning Toolbox**. This can be done by running the installation package of MATLAB and select the corresponding terms in the installation options. You can also install them in the MATLAB Window.
+Install MATLAB toolboxes ***Statistics and Machine Learning Toolbox*** and ***Deep Learning Toolbox***. This can be done by running the installation package of MATLAB and select the corresponding terms in the installation options. You can also install them in the MATLAB Window.
 
-#### The mpt3 toolbox and YALMIP
+#### tbxmanager
 
-Install the `mpt` toolbox that works with Polyhedrons follow this [instruction](https://www.mpt3.org/Main/Installation). Let us use `TBX_MANAGER_DIR` to denote the root directory of the installation. This step also installs the `YALMIP` toolbox for you under the repository `TBX_MANAGER_DIR/toolboxes/yalmip/RXXXXXXXX/all/YALMIP-master`. The specific path might be different. You may also replace it with your own installation following this [instruction](https://yalmip.github.io/tutorial/installation/), although it is not necessary. YALMIP is completely written in `m`-code, so is irrelevant to the Operating Systems (OS).
+Configure the `tbxmanager` following this [instruction](https://www.mpt3.org/Main/Installation) which installs a cluster MATLAB toolboxes for you, including `YALMIP`, the `sedumi` solver, `mpt` that works with polyhedrons, which are necessary dependencies for this toolbox. Let us use `TBX_MANAGER_DIR` to denote the root directory of the installation. The associated MATLAB toolboxes are placed under `TBX_MANAGER_DIR/toolboxes/`. You may also replace them with your own installations, although it is not necessary.
 
 #### The solvers for YALMIP
 
