@@ -10,9 +10,8 @@
 % Authors: Oliver Schön, Birgit van Huijgevoort
 
 clc; clear; close all;
-
-% Add toolboxes to path
-run Install.m
+cd([fileparts(which(mfilename)), '/..']);
+config
 
 % Track runtime
 tStart = tic;
