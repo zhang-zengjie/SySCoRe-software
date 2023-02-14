@@ -2,7 +2,7 @@
 % Add the necessary paths of the dependencies
 
 %% Add the paths of the dependencies
-% Replace the paths according to your situation
+% IMPORTANT!!!: this is just a template. You need to replace the paths below using your own paths of installation
     
 try % Add the path to the tbxmanager
     addpath(genpath('~/tbxmanager/'));
@@ -22,8 +22,6 @@ catch
     warning('Could not find mosek solver. Synthesis may fail.');
 end
 
-%% Remove all other versions of SySCoRe to avoid conflicts
-rmpath(genpath(fileparts(which('SySCoRe-software'))));
-
 %% Add all subfolders of this toolbox to the MATLAB path.
+% You do not need to modify this part
 addpath(genpath(fileparts(which(mfilename))));
