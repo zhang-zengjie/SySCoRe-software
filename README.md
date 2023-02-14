@@ -32,7 +32,7 @@ Configure the `tbxmanager` following [this instruction](https://www.mpt3.org/Mai
 
 #### the mosek solver for YALMIP
 
-The `mosek` solver is also needed, which can be installed following [***this instruction***](https://docs.mosek.com/10.0/install/installation.html). Note that `mosek` has different versions among `Conda`, `Windows`, `Linux`, and `Mac OS`. **Be careful that you are downloading the correct version**. It is also important to obtain the personal license file `mosek.lic` following [this intruction](https://docs.mosek.com/10.0/licensing/index.html) and place it in the directory regulated by the installation instruction. This license is only for a specific user of the OS. Note down the root directory of `mosek` as `MOSEK_DIR`.
+The `mosek` solver is also needed, which can be installed following [***this instruction***](https://docs.mosek.com/10.0/install/installation.html). Note that `mosek` has different versions among `Conda`, `Windows`, `Linux`, and `Mac OS`. **Be careful that you are downloading the correct version**. It is also important to obtain the personal license file `mosek.lic` following [this intruction](https://docs.mosek.com/10.0/licensing/index.html) and place it in the directory regulated by the installation instruction. This license is only for a specific user of the OS. Note down the root directory of `mosek` as `MOSEK_DIR`. We are only using the MATLAB toolbox of `mosek`, so the concerned path is `MOSEK_DIR/mosek/X.X/toolbox/r20xxa`. The specific path name may be different according to the versions.
 
 #### tensor toolbox
 
