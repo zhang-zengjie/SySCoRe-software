@@ -53,28 +53,31 @@ Download the ***tensor toolbox*** following [***this instruction***](https://www
 
 Before you run any codes in this toolbox, you need to add the root paths of your ***tbxmanager***, ***mosek*** solver, and ***tensor_toolbox*** to MATLAB. We recommend to simplify this process via one-time configuration. Supposing that the root directory of this toolbox is `$SYSCORE_ROOT=SySCoRe-software`, open `$SYSCORE_ROOT/config.m`, and fill the paths of the above toolboxes in your system to the corresponding `addpath` statements.
 ```
-% This is just an example. You need to replace the paths below using your own paths of installation
+%% Add the paths of the dependencies
+% IMPORTANT!!!: this is just a template. You need to replace the paths below using your own paths of installation
+    
 try % Add the path to the tbxmanager
-    addpath(genpath('~/Documents/test/tbxmanager/'));
+    addpath(genpath('~/tbxmanager/'));
 catch
     warning('Could not find mpt3 toolbox. Synthesis may fail.');
 end
 
 try % Add the path to the tensor_toolbox
-    addpath(genpath('~/Documents/test/tensor_toolbox/'));
+    addpath(genpath('~/tensor_toolbox/'));
 catch
     warning('Could not find tensor toolbox. Synthesis may fail.');
 end
 
 try % Add the path to the mosek solver
-    addpath(genpath('~/Documents/test/mosek/mosek/10.0/toolbox/r2017a'));
+    addpath(genpath('~/mosek/mosek/10.0/toolbox/r2017a'));
 catch
     warning('Could not find mosek solver. Synthesis may fail.');
 end
 ```
 Meanwhile, the configuration file also add the paths of all subfolders of this toolbox via
 ```
-% You do not need to modify this statement
+%% Add all subfolders of this toolbox to the MATLAB path.
+% You do not need to modify this part
 addpath(genpath(fileparts(which(mfilename))));
 ```
 This configuration only needs to be conducted once. Whenever you run a code using this toolbox, run this `config.m` file first.
