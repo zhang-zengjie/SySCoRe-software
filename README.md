@@ -26,7 +26,7 @@ This toolbox is created by: *Birgit van Huijgevoort*, *Oliver Schön*, *Sadegh S
 
 #### Note on Path Convension
 
-All paths in this tutorial follow the **Linux** convention. Beware of changes if you are using **Windows** or **Mac OS**.
+All paths in this tutorial follow the ***Linux*** convention. Beware of changes if you are using ***Windows*** or ***Mac OS***.
 
 
 ### 2. Installation of Dependencies
@@ -37,15 +37,15 @@ Install MATLAB toolboxes ***Control System Toolbox***, ***Statistics and Machine
 
 #### tbxmanager
 
-Configure the `tbxmanager` following [***this instruction***](https://www.mpt3.org/Main/Installation) which installs a cluster MATLAB toolboxes for you, including ***YALMIP***, the ***sedumi*** solver, `mpt` that works with polyhedrons, which are necessary dependencies for this toolbox. Let us use `TBX_MANAGER_DIR` to denote the root directory of the installation. The associated MATLAB toolboxes are placed under `TBX_MANAGER_DIR/toolboxes/`. You may also replace them with your own installations, although it is not necessary.
+Configure the `tbxmanager` following [***this instruction***](https://www.mpt3.org/Main/Installation) which installs a cluster MATLAB toolboxes for you, including ***YALMIP***, the ***sedumi*** solver, ***mpt*** that works with polyhedrons, which are necessary dependencies for this toolbox. Let us use `TBX_MANAGER_DIR` to denote the root directory of the installation. The associated MATLAB toolboxes are placed under `TBX_MANAGER_DIR/toolboxes/`. You may also replace them with your own installations, although it is not necessary.
 
 #### the mosek solver for YALMIP
 
-The ***mosek*** solver is also needed, which can be installed following [***this instruction***](https://docs.mosek.com/10.0/install/installation.html). Note that ***mosek*** has different versions among `Conda`, `Windows`, `Linux`, and `Mac OS`. **Be careful that you are downloading the correct version**. It is also important to obtain the personal license file `mosek.lic` following [***this intruction***](https://docs.mosek.com/10.0/licensing/index.html) and place it in the directory regulated by the installation instruction. This license is only for a specific user of the OS. Note down the root directory of ***mosek*** as `MOSEK_DIR`. We are only using the MATLAB toolbox of ***mosek***, so the concerned path is `MOSEK_MATLAB_DIR = MOSEK_DIR/mosek/X.X/toolbox/r20xxa`. The specific path name may be different according to the versions.
+The ***mosek*** solver is also needed, which can be installed following [***this instruction***](https://docs.mosek.com/10.0/install/installation.html). Note that ***mosek*** has different versions among ***Conda***, ***Windows***, ***Linux***, and ***Mac OS***. **Be careful that you are downloading the correct version**. It is also important to obtain the personal license file `mosek.lic` following [***this intruction***](https://docs.mosek.com/10.0/licensing/index.html) and place it in the directory regulated by the installation instruction. This license is only for a specific user of the OS. Note down the root directory of ***mosek*** as `MOSEK_DIR`. We are only using the MATLAB toolbox of ***mosek***, so the concerned path is `MOSEK_MATLAB_DIR = MOSEK_DIR/mosek/X.X/toolbox/r20xxa`. The specific path name may be different according to the versions.
 
 #### tensor toolbox
 
-Download the `tensor toolbox` follow [this instruction](https://www.tensortoolbox.org). Note down its root directory as `TENSOR_DIR`.
+Download the ***tensor toolbox*** follow [this instruction](https://www.tensortoolbox.org). Note down its root directory as `TENSOR_DIR`.
 
 ### 3. One-Time Configuration
 
