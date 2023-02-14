@@ -1,6 +1,6 @@
 # SySCoRe: Toolbox for the Synthesis of Linear Temporal Logic
 
-## Quick Start Tutorial
+## A Quick Start Tutorial
 
 ### 1. Introduction
 
@@ -94,14 +94,14 @@ It is important that the running should be conducted under the root directory `S
 Use the following classes and functions to solve your problems.
 
 #### Building a model
-Build a model as an object of the classes described in the folder Models:
-- LinModel
+Using the following classes to build a model:
+- `Models/LinModel.m`
 - NonlinModel
 
-### Build a specification & translate it to a DFA
+#### Build a specification & translate it to a DFA
 - TranslateSpec
 
-### Compute abstraction
+#### Computing abstraction
 Compute a finite state abstraction using
 - FSabstraction
 
