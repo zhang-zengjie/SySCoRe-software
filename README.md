@@ -49,7 +49,7 @@ Download the `tensor toolbox` follow [this instruction](https://www.tensortoolbo
 
 ### 3. One-time configuration
 
-Before you run any codes in this toolbox, you need to add the paths of the `tbxmanager`, the `mosek` solver, and the `tensor_toolbox` to MATLAB. We recommend to simplify this process via one-time configuration. Supposing that the root directory of this toolbox is `SySCoRe-software`, open `SySCoRe-software/config.m`, and fill the paths of the above toolboxes to the corresponding `addpath` statements.
+Before you run any codes in this toolbox, you need to add the paths of the `tbxmanager`, the `mosek` solver, and the `tensor_toolbox` to MATLAB. We recommend to simplify this process via one-time configuration. Supposing that the root directory of this toolbox is `SYSCORE_ROOT=SySCoRe-software`, open `SYSCORE_ROOT/config.m`, and fill the paths of the above toolboxes to the corresponding `addpath` statements.
 ```
 try % Add the path to the tbxmanager
     addpath(genpath('~/Documents/test/tbxmanager/'));
@@ -77,13 +77,13 @@ This configuration only needs to be conducted once. Whenever you run a code usin
 
 ### 3. Running Tutorials
 
-You can run all six tutorials under the 'SysCoRe-software/Tutorials/' directory.
-- `CarPark1D`
-- `CarPark2D_RunningExample`
-- `CarPark2D_interfaceOption`
-- `PackageDelivery`
-- `BAS`
-- `VanderPol`
+You can run all six tutorial scripts under the 'SYSCORE_ROOT/Tutorials/' directory.
+- `SYSCORE_ROOT/Tutorials/CarPark1D.m`
+- `SYSCORE_ROOT/Tutorials/CarPark2D_RunningExample.m`
+- `SYSCORE_ROOT/Tutorials/CarPark2D_interfaceOption.m`
+- `SYSCORE_ROOT/Tutorials/PackageDelivery.m`
+- `SYSCORE_ROOT/Tutorials/BAS.m`
+- `SYSCORE_ROOT/Tutorials/VanderPol.m`
 
 Note that all tutorial codes start with the following statements:
 ```
