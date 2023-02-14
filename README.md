@@ -127,7 +127,7 @@ Use the following functions to compute abstract models:
 Use the following function to quantify the simulation relation between the abstract and original model
 - `$SYSCORE_ROOT/Similarity/QuantifySim.m` 
 
-### Synthesis
+#### Synthesis
 Use the following classes and functions to synthesize a robust controller
 - `$SYSCORE_ROOT/Controllers/RefineController.m`: the class for a refined controller;
 - `$SYSCORE_ROOT/Controllers/SynthesizeRobustController.m`: synthesize a robust controller;
