@@ -36,7 +36,7 @@ The `mosek` solver is also needed, which can be installed following [***this ins
 
 #### tensor toolbox
 
-Install the `Tensor toolbox` follow this [instruction](https://www.tensortoolbox.org). Note down the installation directory as `TENSOR_DIR`.
+Download the `tensor toolbox` follow [this instruction](https://www.tensortoolbox.org). Note down its root directory as `TENSOR_DIR`.
 
 ### 2. Run Tutorials
 
