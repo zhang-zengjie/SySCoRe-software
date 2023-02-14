@@ -126,7 +126,7 @@ Use the following classes and functions to synthesize a robust controller
 
 ### References
 - **van Huijgevoort, B. C.** and **Haesaert, S.** (2020). Similarity quantification for linear stochastic systems: A coupling compensator approach. *Automatica*, 144, 110476.
-- **Haesaert, S.**, **Soudjani, S. **, and **Abate, A.** (2017). Verification of general Markov decision processes by approximate similarity relations and policy refinement. SIAM Journal on Control and Optimization, 55(4), 2333-2367.
+- **Haesaert, S.**, **Soudjani, S. **, and **Abate, A.** (2017). Verification of general Markov decision processes by approximate similarity relations and policy refinement. *SIAM Journal on Control and Optimization*, 55(4), 2333-2367.
 - **Haesaert, S.** and **Soudjani, S.** (2020). Robust dynamic programming for temporal logic control of stochastic systems. *IEEE Transactions on Automatic Control*, 66(6), 2496-2511.
 - **van Huijgevoort, B.C.** and **Haesaert, S.** (2022). Temporal logic control of nonlinear stochastic systems using a piecewise-affine abstraction. [[*Link*](https://www.sofiehaesaert.com/assets/Research/PWA_abstractions.pdf)]
 
