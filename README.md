@@ -49,7 +49,7 @@ Download the ***tensor toolbox*** follow [this instruction](https://www.tensorto
 
 ### 3. One-Time Configuration
 
-Before you run any codes in this toolbox, you need to add the paths of the `tbxmanager`, the ***mosek*** solver, and the `tensor_toolbox` to MATLAB. We recommend to simplify this process via one-time configuration. Supposing that the root directory of this toolbox is `SYSCORE_ROOT=SySCoRe-software`, open `SYSCORE_ROOT/config.m`, and fill the paths of the above toolboxes to the corresponding `addpath` statements.
+Before you run any codes in this toolbox, you need to add the paths of the ***tbxmanager***, the ***mosek*** solver, and the ***tensor_toolbox*** to MATLAB. We recommend to simplify this process via one-time configuration. Supposing that the root directory of this toolbox is `SYSCORE_ROOT=SySCoRe-software`, open `SYSCORE_ROOT/config.m`, and fill the paths of the above toolboxes to the corresponding `addpath` statements.
 ```
 try % Add the path to the tbxmanager
     addpath(genpath('~/Documents/test/tbxmanager/'));
